@@ -6,9 +6,9 @@ export default function AudioPlayer({ selected, setSelected }) {
 
   const songs = [
     { title: "Stay", artist: "Justin Bieber", img: "/assets/stay.jpeg", src: "/audio/stay.mp3", top: true },
-    { title: "Woh", artist: "Ikka", img: "/assets/woh.jpeg", src: "/audio/woh.mp3", top: true },
+    { title: "Woh", artist: "Ikka", img: "/assets/woh.jpeg", src: "/audio/woh.mp3", top: false },
     { title: "Perfect", artist: "Ed Shareen", img: "/assets/perf.jpeg", src: "/audio/perf.mp3", top: false },
-    { title: "Duppata", artist: "Diesby", img: "/assets/heer.jpeg", src: "/audio/heer.mp3", top: false },
+    { title: "Duppata", artist: "Diesby", img: "/assets/dup.jpeg", src: "/audio/dup.mp3", top: true },
     { title: "Dhundhala", artist: "Yashraj", img: "/assets/dhun.jpeg", src: "/audio/dhun.mp3", top: false },
     { title: "Señorita", artist: "Shawn Mendes", img: "/assets/sen.jpeg", src: "/audio/sen.mp3", top: true },
     { title: "Thodi Si Daaru", artist: "AP Dhillon", img: "/assets/si.jpeg", src: "/audio/si.mp3", top: true },
