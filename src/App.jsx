@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react';
 import "./App.css";
 import AudioPlayer from './components/AudioPlayer';
 
 const App = () => {
+  const [selectedSong, setSelectedSong] = useState(null);
+
   return (
     <div className="container">
-        <h1>Music Player</h1>
-        <AudioPlayer audioSrc='./audio/WOH.mp3' />
-        <footer> Copyright 2024 © Sanjosh Satsangi</footer>
-    </div>
-    
-    
-  )
-}
+      
+  <img src="./assets/logo.png" alt="Logo" className="logo" />
 
-export default App
+      {/* Pass setter to child */}
+      <AudioPlayer selected={selectedSong} setSelected={setSelectedSong} />
+
+      {selectedSong === null && (
+        <footer>Copyright 2024 © iMusic</footer>
+      )}
+    </div>
+  );
+};
+
+export default App;
